@@ -1,0 +1,98 @@
+#main {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  justify-content: center;
+}
+.container_principal {
+  position: absolute;
+  background: #444;
+  width: 80vw;
+  height: 600px;
+  z-index: 1;
+  border-radius: 6px;
+}
+
+#img_perfil img {
+  max-width: 100%;
+  border-radius: 300px;
+  margin: 2.5rem auto 2rem auto;
+}
+
+#img_perfil::after {
+  position: absolute;
+  opacity: 0.3;
+  top: 18%;
+  left: 3%;
+  border-radius: 300px;
+  content: "";
+  height: calc(75% + 0px);
+  width: calc(100% + 0px);
+  background-image: -webkit-repeating-radial-gradient(
+    center center,
+    #fff,
+    #fff 1px,
+    transparent 0px,
+    transparent 100%
+  );
+  background-image: -moz-repeating-radial-gradient(
+    center center,
+    #fff,
+    #fff 1px,
+    transparent 0px,
+    transparent 100%
+  );
+  background-image: -ms-repeating-radial-gradient(
+    center center,
+    #fff,
+    #fff 1px,
+    transparent 0px,
+    transparent 100%
+  );
+  -webkit-background-size: 6px 6px;
+  -moz-background-size: 6px 6px;
+  background-size: 6px 6px;
+  z-index: -1;
+}
+
+.nome {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #ffff;
+  text-align: center;
+  margin: 0 0 1rem 0;
+}
+
+.cargo {
+  font-size: 1.2rem;
+  text-align: center;
+  color: #ccc;
+}
+
+.social {
+  margin: auto;
+  color: #ffff;
+  font-size: 2rem;
+  max-width: 40px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.social:hover {
+  background: rgba(255, 255, 255, 0.757);
+  color: black;
+  cursor: pointer;
+}
+
+.social i {
+  margin: 0;
+}
+
+.curriculo_btn {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.fundo_container_secundario {
+  background-color: #222;
+}
